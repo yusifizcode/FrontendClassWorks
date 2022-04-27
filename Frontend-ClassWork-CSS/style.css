@@ -1,0 +1,14 @@
+.main{
+    border: 3px solid green;
+    padding: 15px;
+    height: 94vh;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.main-text{
+    background-color: lightblue;
+    border-bottom: 3px solid green;
+    border-radius: 5px;
+    padding: 5px;
+}
