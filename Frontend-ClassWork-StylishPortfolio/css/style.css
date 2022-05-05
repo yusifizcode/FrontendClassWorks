@@ -193,3 +193,168 @@ body{
     color: rgba(255, 255, 255, 0.7);
     margin-bottom: 0;
 }
+
+
+#callout{
+    padding: 15rem 0;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../images/bg-callout.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#callout .container{
+    padding: 0 3rem;
+    text-align: center;
+}
+
+#callout .container h2{
+    font-size: 3rem;
+    font-weight: 700;
+    max-width: 30rem;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.2;
+}
+
+#callout .container a{
+    color: white;
+    background-color: #1D809F;
+    border-color: #1D809F;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border: none;
+    padding: 1.25rem 2.5rem;
+    cursor: pointer;
+}
+
+#callout .container a:hover{
+    color: white;
+    background-color: #196d87;
+    border-color: #196d87;
+}
+
+
+#recent-projects{
+
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+    color: black;
+    text-align: center;
+}
+
+
+#recent-projects .container{
+    padding: 0 3rem;
+}
+
+#recent-projects .container .services-section-heading h3{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: rgb(236, 184, 7);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+#recent-projects .container .services-section-heading h2{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 0;
+    font-weight: 700;
+    line-height: 1.2;
+
+}
+
+
+#recent-projects .col-6{
+    width: calc(50% - 10px);
+}
+
+
+
+#recent-projects .row{
+    gap: 5px;
+}
+
+
+.portfolio-item{
+    display: block;
+    color: #17667f;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    margin: 0;
+    max-width: none;
+    transition: 0.4s;
+}
+
+
+.portfolio-item:hover{
+    color: #17667f;
+}
+
+
+.portfolio-item .caption{
+    transition: 0.4s;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(33, 37, 41, 0.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.portfolio-item:hover .caption{
+    background-color: rgba(29, 128, 159, 0.8);
+    transform: scale(0.9);
+}
+
+.portfolio-item:hover img{
+    transform: scale(0.9);
+}
+
+.portfolio-item .caption .caption-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: opacity 0.25s;
+    margin: auto 2rem 2rem;
+    color: white;
+}
+
+.portfolio-item img{
+    max-width: 100%;
+    height: auto;
+    transition: 0.4s;
+
+}
+
+.portfolio-item .caption .caption-content h2{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: start;
+}
+
+.portfolio-item .caption .caption-content p{
+    font-weight: 300;
+    font-size: 1,2rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
