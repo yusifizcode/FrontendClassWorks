@@ -1,0 +1,83 @@
+.settings{
+    border-radius: 50%;
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    margin: 300px auto;
+    position: relative;
+}
+
+
+.settings > i{
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    font-size: 50px;
+    color: white;
+}
+
+
+.socials{
+    position: relative;
+    bottom: 250px;
+    padding: 0;
+    right: 40px;
+}
+
+.medias{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:20px;
+    list-style: none;
+    gap: 5px;
+    width: 110px;
+}
+
+.medias i{
+    width: 45px;
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: white;
+    color: gray;
+    box-shadow: 2px 3px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0%;
+}
+
+.medias span{
+    opacity: 0%;
+
+}
+
+@keyframes share {
+    0%{
+        opacity: 0%;
+
+    }
+    50%{
+        opacity: 50%;
+
+    }
+    100%{
+        opacity: 100%;
+
+    }
+}
+
+
+.settings:hover .medias i{
+    animation: share;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.settings:hover .medias span{
+    animation: share;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
