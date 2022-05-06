@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+}
+
+
+.heading-title{
+    text-align: center;
+}
+
+
+.heading-desc{
+    text-align: center;
+}
+
+
+.heading-desc span{
+    background-color: black;
+    color: white;
+    padding: 2px;
+}
+
+
+.main-cart{
+    margin: 16px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
