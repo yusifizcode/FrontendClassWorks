@@ -1,0 +1,34 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.slides {
+  margin-top: 200px;
+  margin-left: 100px;
+}
+
+.slides button:first-child {
+  z-index: 9999;
+  bottom: -255px;
+  left: 0;
+  text-decoration: none;
+  background: white;
+  color: black;
+  font-size: 30px;
+}
+
+.slides button:last-child {
+  z-index: 9999;
+  bottom: -255px;
+  right: 96px;
+  text-decoration: none;
+  background: white;
+  color: black;
+  font-size: 30px;
+}
+
+.active {
+  z-index: 999;
+}
+/*# sourceMappingURL=style.css.map */
