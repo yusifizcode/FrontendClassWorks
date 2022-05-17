@@ -1,5 +1,5 @@
 let snake = document.querySelector('.snake')
-
+var main = document.querySelector('.main')
 var left = 0;
 var up = 0;
 window.addEventListener('keydown',function(e){
@@ -37,13 +37,18 @@ window.addEventListener('keydown',function(e){
     }
     else if(e.keyCode==13){
         let dot = document.createElement('div');
-        dot.style.width = 10 + 'px';
-        dot.style.height = 10 + 'px';
-        dot.style.borderRadius =50 + '%';
-        // dot.style.position = 'absolute';
-        // dot.style.left = snake.style.offset
+        
+        var l =snake.style.left.slice(0,snake.style.left.length-2)
+        let t = snake.style.top.slice(0,snake.style.top.length-2)
+
+        dot.className = 'dot';
+        dot.style.left=Number(l) + 25 + "px";
+        dot.style.top=Number(t) + 25 +"px";
+        snake.style.width=snake.style.width.slice(0,snake.style.width.length-2)-10 + "px";
+        snake.style.height=snake.style.height.slice(0,snake.style.height.length-2)-10 + "px";
+
         dot.style.backgroundColor = 'yellow';
-        snake.appendChild(dot);
+        main.appendChild(dot);
     }
 
 })
