@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.openbtn{
+    width: 200px;
+    
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    filter: blur(1.5rem);
+}
