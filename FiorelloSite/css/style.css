@@ -1,0 +1,124 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar .navbar-nav .nav-item {
+  position: relative;
+}
+
+.navbar .navbar-nav .nav-item a {
+  padding: 0px 30px !important;
+}
+
+.navbar .navbar-nav .nav-item a span {
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.navbar .navbar-nav .nav-item a span::before {
+  content: "";
+  height: 1px;
+  width: 0%;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.navbar .navbar-nav .nav-item a:hover span::before {
+  height: 1px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.navbar .navbar-nav .nav-item:nth-child(1) a span::before {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.navbar .navbar-nav .nav-item .nav-dropdown {
+  min-width: 100%;
+  height: 0px;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  position: absolute !important;
+  top: 50px;
+  left: 3px;
+  text-align: left;
+  background-color: white;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.navbar .navbar-nav .nav-item .nav-dropdown li {
+  width: 210px;
+  padding: 8px 26px !important;
+}
+
+.navbar .navbar-nav .nav-item .nav-dropdown li:hover .drop-item::before {
+  width: 100%;
+}
+
+.navbar .navbar-nav .nav-item .nav-dropdown .drop-item {
+  width: 100%;
+  text-decoration: none;
+  padding: 0 !important;
+  padding: 12px 8px 12px 0px !important;
+  font-size: 13px;
+  color: #737373;
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.navbar .navbar-nav .nav-item .nav-dropdown .drop-item::before {
+  content: "";
+  height: 1px;
+  width: 0%;
+  background-color: black;
+  position: absolute;
+  bottom: 12px;
+  left: 0px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.navbar .navbar-nav .nav-item:hover .nav-dropdown {
+  height: 290px;
+}
+
+.nav-icons {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-icons li {
+  padding: 0px 20px;
+}
+/*# sourceMappingURL=style.css.map */
