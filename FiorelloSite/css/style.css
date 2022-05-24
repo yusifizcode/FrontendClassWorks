@@ -1,11 +1,19 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
   padding: 0;
   margin: 0;
+}
+
+.navbar .toggle-icon:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #ff7b00;
 }
 
 .navbar .navbar-nav .nav-item {
@@ -62,15 +70,17 @@ body {
   min-width: 100%;
   height: 0px;
   overflow: hidden;
+  opacity: 0;
   list-style: none;
   padding: 0;
   position: absolute !important;
-  top: 50px;
+  top: 72px;
   left: 3px;
   text-align: left;
   background-color: white;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  z-index: 9;
 }
 
 .navbar .navbar-nav .nav-item .nav-dropdown li {
@@ -109,6 +119,7 @@ body {
 
 .navbar .navbar-nav .nav-item:hover .nav-dropdown {
   height: 290px;
+  opacity: 1;
 }
 
 .nav-icons {
@@ -118,7 +129,88 @@ body {
   display: flex;
 }
 
+.nav-icons .search .search-icon:hover {
+  color: red;
+}
+
+.nav-icons .search .search-bar {
+  position: relative;
+}
+
+.nav-icons .search .search-bar .search-sec {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 72px;
+  right: 0;
+  left: auto;
+  height: 0px;
+  overflow: hidden;
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.nav-icons .search .search-bar .search-sec input {
+  outline: none !important;
+  border: none !important;
+  text-decoration: none;
+}
+
+.nav-icons .search .search-bar .search-sec i {
+  color: #737373;
+  font-weight: 600;
+}
+
 .nav-icons li {
   padding: 0px 20px;
+}
+
+.nav-icons .nav-icons-cart {
+  position: relative;
+}
+
+.nav-icons .nav-icons-cart .cart-icn:hover + .cart-info {
+  height: 70px;
+  visibility: visible;
+  opacity: 1;
+  width: 245px;
+}
+
+.nav-icons .nav-icons-cart .cart-info {
+  padding: 23px 20px;
+  position: absolute;
+  left: auto;
+  right: 0;
+  top: 72px;
+  color: #737373;
+  font-size: 13px;
+  font-weight: 500;
+  width: 245px;
+  background-color: white;
+  border: 1px solid #e8e8e8;
+  text-align: left;
+  z-index: 1000;
+  overflow: hidden;
+  height: 0%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.active-search {
+  height: 26px !important;
+  top: 50px !important;
+  right: 0 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 /*# sourceMappingURL=style.css.map */
