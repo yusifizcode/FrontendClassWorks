@@ -141,6 +141,7 @@ body{
     display: flex;
     .search{     
         .search-icon{
+            cursor: pointer;
             &:hover{
                 color: red;
             }
@@ -159,6 +160,8 @@ body{
                 overflow: hidden;
                 z-index: 9;
                 // height: 0;
+                padding: 23px 20px;
+                background-color: white;
                 opacity: 0;
                 visibility: hidden;
                 transition: all 0.3s;
@@ -191,6 +194,7 @@ body{
     }
     .nav-icons-cart{
         position: relative;
+        cursor: pointer;
         .cart-icn:hover + .cart-info{
             
                 height: 70px;
@@ -225,11 +229,118 @@ body{
 }
 
 .active-search{
-    height: 26px !important;
-    top: 50px !important;
+    height: 60px !important;
+    top: 48px !important;
     right: 0 !important;
     opacity: 1 !important;
     visibility: visible !important;  
     // left: auto;
     // overflow: hidden;
+}
+
+
+#carouselExampleFade{
+    .carousel-inner{
+        .carousel-item{
+            .header-content{
+                width: 520px;
+                top: 150px;
+                left: 200px;
+                .header-title{
+                    color: black;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+
+
+#main-content{
+    padding-top: 57px;
+    padding-bottom: 75px;
+    .flowers-list{
+        list-style: none;
+        display: flex;
+        margin-bottom: 27px;
+        padding: 0;
+        .flower-item{
+            margin-right: 32px;
+            font-size: 12px;
+            cursor: pointer;
+            // &:first-child{
+            //     color: red;
+            // }
+            &:hover{
+                color: red;
+            }
+        }
+        .flower-item.active{
+            color: red;
+        }
+    }
+
+    .product-content{
+        .product-img{
+            cursor: pointer;
+            width: 100%;
+            overflow: hidden;
+            transition: all 0.2s;
+            img{
+                object-fit: cover;
+                width: 100%;
+                transition: all 0.2s;
+                &:hover{
+                    object-fit: cover;
+                    max-width: 100%;
+                    transform: scale(1.03);
+                }
+            }
+
+            
+        }
+
+        .product-desc{
+            margin-top: 23px;
+            text-align: center;
+            h6{
+                font-size: 12px;
+                cursor: pointer;
+            }
+
+            .add-to-cart{
+                font-size: 12px;
+                cursor: pointer;
+                left: 39%;
+                opacity: 0;
+                transform: translateX(-50%);
+                transition: all 0.4s;
+
+                &:hover{
+                    color: red;
+                }
+            }
+
+            .product-price{
+                font-size: 12px;
+                right: 45%;
+                opacity: 1;
+                transform: translateX(0%);
+                transition: all 0.4s;
+                cursor: pointer;
+            }
+        }
+
+        &:hover{
+            .add-to-cart{
+                opacity: 1;
+                transform: translateX(1%);
+            }
+            .product-price{
+                opacity: 0;
+                right: 15% !important;
+            }
+        }
+    }
 }
