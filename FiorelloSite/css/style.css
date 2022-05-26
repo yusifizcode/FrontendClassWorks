@@ -330,4 +330,238 @@ body {
   opacity: 0;
   right: 15% !important;
 }
+
+#suprise {
+  background-color: #f7f7f7;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+#suprise .suprise-img {
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+#suprise .suprise-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#suprise .suprise-img img:hover {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+#suprise .suprise-img i {
+  padding: 40px;
+  background-color: white;
+  color: red;
+  border-radius: 50%;
+}
+
+#suprise .suprise-content .suprise-list {
+  list-style: none;
+  padding: 0;
+}
+
+#suprise .suprise-content .suprise-list .suprise-item {
+  margin: 20px 0px;
+}
+
+#experts .experts-heading {
+  padding-top: 138px;
+  padding-bottom: 60px;
+}
+
+#experts .experts-heading h2 {
+  margin-bottom: 20px;
+}
+
+#experts .experts-heading p {
+  font-size: 17px;
+  line-height: 29px;
+  margin-top: 15px;
+}
+
+#experts .flower-expert {
+  padding-bottom: 80px;
+}
+
+#experts .flower-expert .expert-info {
+  margin-top: 18px;
+}
+
+#experts .flower-expert .expert-info h6 {
+  font-size: 12px;
+}
+
+#experts .flower-expert .expert-info span {
+  font-size: 12px;
+  margin: 2px 0px;
+  color: #afafaf;
+}
+
+#subscribe {
+  background-image: url("https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/h3-background-img.jpg");
+  background-position: 50% 52px;
+  background-attachment: fixed;
+  padding-top: 185px;
+  padding-bottom: 185px;
+}
+
+#subscribe .subscribe-content h3 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+#subscribe .subscribe-input {
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+#subscribe .subscribe-input input {
+  width: 100%;
+  border: none !important;
+  padding: 19px 18px;
+  font-size: 12px;
+  color: #e8e8e8;
+}
+
+#subscribe .subscribe-input input:focus {
+  border: none !important;
+  outline: none !important;
+}
+
+#subscribe .subscribe-input a {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#blog .blog-heading {
+  padding-top: 138px;
+  padding-bottom: 60px;
+}
+
+#blog .blog-heading h2 {
+  margin-bottom: 20px;
+}
+
+#blog .blog-heading p {
+  font-size: 17px;
+  line-height: 29px;
+  margin-top: 15px;
+}
+
+#blog .main-blog .blog-img {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#blog .main-blog .blog-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#blog .main-blog .blog-img img:hover {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+#blog .main-blog .blog-img .blog-date {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: white;
+  padding: 12px 16px 10px;
+  font-size: 10px;
+  line-height: 1em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#blog .main-blog .blog-img .blog-date:hover {
+  color: red;
+}
+
+#blog .main-blog .blog-content {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#blog .main-blog .blog-content p {
+  margin-top: 20px;
+}
+
+#feedbacks {
+  padding-top: 84px;
+  padding-bottom: 112px;
+}
+
+#feedbacks .carousel-item .faq-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#feedbacks .carousel-item .faq-img img {
+  max-width: 87px;
+}
+
+#feedbacks .carousel-item .faq-content {
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.5em;
+  margin: 30px 0px;
+}
+
+#feedbacks .carousel-item .faq-info {
+  text-align: center;
+}
+
+#feedbacks .carousel-item .faq-info p {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+#feedbacks .carousel-item .faq-info span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #afafaf;
+}
 /*# sourceMappingURL=style.css.map */

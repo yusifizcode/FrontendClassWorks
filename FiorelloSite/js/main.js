@@ -14,4 +14,9 @@ $(function(){
         $(this).addClass('active');
         $products.isotope({ filter: filterValue });
       });
+
+
+      $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+      })
 })
